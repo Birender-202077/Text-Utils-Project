@@ -1,18 +1,18 @@
 
 import './App.css';
+import Header from './components/Header';
+import Main from './components/Main';
+import Sidebar from './components/Sidebar';
 
-// function Header() {
-//   return <h1>Hello World!</h1>
-// }
-// function App() {
-//   return <Header />
-// }
 
-// export default App;
-
-function App(props) {
+function App() {
   return (
-    <h1>{props.title}</h1>
+    <div>
+      <Header name="Birender" color="black" />
+      <Main greet="Hey!!" />
+      <Sidebar wish="Hello" />
+    </div>
+
   );
 }
 export default App;
