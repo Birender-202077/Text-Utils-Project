@@ -6,7 +6,7 @@ import Textarea from './components/Textarea';
 function App() {
   return (
     <>
-      <Navbar title="Birender's Blog" />
+      <Navbar title="Birender's TextUtils" />
       <Textarea heading="Enter text here to analyze" />
     </>
 
