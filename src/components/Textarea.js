@@ -7,22 +7,21 @@ export default function Textarea(props) {
         console.log("Clicked");
         let newText = text.toUpperCase();
         setText(newText);
-
+        props.showAlert("Converted to UpperCase", "success")
     }
 
     let handleLowCase = () => {
         let newText = text.toLowerCase();
         setText(newText);
-    }
+        props.showAlert("Converted to LowerCase", "success")
 
-    let handleOnChange = (event) => {
-        console.log("On Change")
-        setText(event.target.value)
     }
 
     let handleClearText = () => {
         let newtext = " ";
         setText(newtext);
+        props.showAlert("Everything is cleared", "warning")
+
     }
 
     let handleReverseText = () => {
@@ -32,6 +31,10 @@ export default function Textarea(props) {
         setText(newStr)
     }
 
+    let handleOnChange = (event) => {
+        console.log("On Change")
+        setText(event.target.value)
+    }
 
 
     return (
