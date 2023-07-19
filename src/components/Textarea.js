@@ -38,7 +38,7 @@ export default function Textarea(props) {
         <>
             <div className="container my-3 ">
                 <h1>{props.heading}</h1>
-                <label htmlFor="myText" className="form-label my-3">Example textarea</label>
+                <label htmlFor="myText" className="form-label my-3">Write your text here </label>
                 <textarea className="form-control" id="myText" onChange={handleOnChange} value={text} rows="6"></textarea>
 
                 <input className="btn btn-primary mx-1 my-3" type="submit" onClick={handleUpCase} value="Convert to Upper Case" />
@@ -58,7 +58,7 @@ export default function Textarea(props) {
 
             <div className="container">
                 <h1>Preview</h1>
-                <p>{text}</p>
+                <p>{text.length > 0 ? text : 'Enter something to preview it here'}</p>
             </div>
         </>
     );
