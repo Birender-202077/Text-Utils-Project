@@ -1,5 +1,5 @@
 
-import Alert from './Alert';
+import Alert from './components/Alert';
 import './App.css';
 import Navbar from './components/Navbar';
 import Textarea from './components/Textarea';
